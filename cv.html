@@ -106,7 +106,7 @@
           <article class="cv-entry">
             <div>
               <h3>Master's Thesis, in progress</h3>
-              <p>Design and Evaluation of a High-Level Orchestrator for Long-Horizon Interactive Tasks</p>
+              <p>A Trace-Grounded Method for Evaluating Reliability Gates in Agentic Software Workflows</p>
             </div>
           </article>
           <ul class="detail-list">
@@ -121,13 +121,30 @@
 
         <section class="cv-block">
           <h2>Proposed Doctoral Research Direction</h2>
-          <ul class="detail-list">
-            <li>Formalize agent orchestration as a sequential decision problem.</li>
-            <li>Model selection, ordering, and termination policies of high-level orchestrators.</li>
-            <li>Learn orchestration policies from logs using imitation learning and reinforcement learning.</li>
-            <li>Improve performance-cost trade-offs in long-horizon tasks.</li>
-            <li>Extend the research toward safety and security in agent decision-making systems.</li>
-          </ul>
+          <p>
+            My doctoral research aims to detect gradual behavioral drift in agentic AI
+            systems: cases where an agent's individual actions appear locally valid at
+            each decision point, yet its behavior progressively diverges from its intended
+            goal or policy over time. Building on my master's work on trace-grounded
+            reliability evaluation, I plan to model agent decision logs and runtime traces
+            as multivariate time series and apply time-series anomaly detection methods
+            to capture and explain this cumulative drift before it manifests as an
+            observable failure.
+          </p>
+          <p>
+            This direction extends naturally toward sequential decision-making and
+            policy-level analysis: framing an agent's trajectory of decisions as a
+            stochastic process allows drift to be characterized not only as statistical
+            deviation but as a shift in the underlying decision policy itself, connecting
+            anomaly detection with reinforcement learning-based behavioral modeling.
+          </p>
+          <p>
+            My long-term goal is to contribute both a methodological framework and a
+            practical toolset for evaluating and auditing the reliability of AI agents
+            deployed in real-world enterprise environments, grounded in my professional
+            experience designing security guardrails and governance frameworks for
+            agentic AI systems.
+          </p>
         </section>
       </div>
     </section>
