@@ -310,3 +310,110 @@ p {
     border-bottom: 1px solid var(--line);
   }
 }
+
+@media print {
+  @page {
+    margin: 0.45in;
+    size: letter;
+  }
+
+  body {
+    background: #fff;
+    font-size: 11pt;
+    line-height: 1.35;
+  }
+
+  a {
+    color: var(--text);
+    text-decoration: none;
+  }
+
+  .site-header,
+  .hero-actions {
+    display: none;
+  }
+
+  .cv-hero,
+  .cv-layout {
+    width: 100%;
+  }
+
+  .cv-hero {
+    padding: 0 0 14px;
+    border-top: 0;
+  }
+
+  .cv-hero h1 {
+    margin-bottom: 8px;
+    font-size: 24pt;
+  }
+
+  .cv-hero h1 span {
+    font-size: 14pt;
+  }
+
+  .lede {
+    margin-bottom: 0;
+    font-size: 12pt;
+    line-height: 1.35;
+  }
+
+  .eyebrow,
+  .panel-label,
+  .cv-sidebar dt,
+  .cv-entry time {
+    font-size: 8.5pt;
+  }
+
+  .cv-layout {
+    grid-template-columns: 150px minmax(0, 1fr);
+    gap: 26px;
+    padding: 14px 0 0;
+  }
+
+  .cv-sidebar {
+    font-size: 9.5pt;
+  }
+
+  .cv-sidebar dt {
+    margin-top: 9px;
+  }
+
+  .cv-main {
+    gap: 14px;
+  }
+
+  .cv-block {
+    break-inside: avoid;
+    padding-bottom: 11px;
+  }
+
+  h2 {
+    margin-bottom: 8px;
+    font-size: 14pt;
+  }
+
+  h3 {
+    margin-bottom: 2px;
+    font-size: 11pt;
+  }
+
+  .cv-entry {
+    gap: 12px;
+    margin-bottom: 7px;
+  }
+
+  .plain-list,
+  .link-list,
+  .detail-list,
+  .tag-list {
+    padding-left: 17px;
+  }
+
+  .plain-list li,
+  .link-list li,
+  .detail-list li,
+  .tag-list li {
+    margin-bottom: 3px;
+  }
+}
