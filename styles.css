@@ -380,16 +380,15 @@ p {
   }
 
   .cv-main {
-    gap: 14px;
+    gap: 10px;
   }
 
   .cv-block {
-    break-inside: avoid;
-    padding-bottom: 11px;
+    padding-bottom: 8px;
   }
 
   h2 {
-    margin-bottom: 8px;
+    margin-bottom: 6px;
     font-size: 14pt;
   }
 
@@ -400,7 +399,7 @@ p {
 
   .cv-entry {
     gap: 12px;
-    margin-bottom: 7px;
+    margin-bottom: 5px;
   }
 
   .plain-list,
@@ -414,6 +413,6 @@ p {
   .link-list li,
   .detail-list li,
   .tag-list li {
-    margin-bottom: 3px;
+    margin-bottom: 2px;
   }
 }
