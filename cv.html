@@ -26,10 +26,10 @@
       <h1>Sungbin Im <span>(Jake Im)</span></h1>
       <p class="lede">
         CISO at QueryPie, working at the intersection of AI agents, security engineering,
-        access control platforms, and long-horizon agent orchestration research.
+        access control platforms, and agentic AI reliability research.
       </p>
       <div class="hero-actions">
-        <a class="button primary" href="assets/Sungbin_Im_CV.pdf?v=20260707-writing">Download PDF</a>
+        <a class="button primary" href="assets/Sungbin_Im_CV.pdf?v=20260708-reliability">Download PDF</a>
         <a class="button" href="mailto:jake@querypie.com">jake@querypie.com</a>
       </div>
     </section>
@@ -57,10 +57,10 @@
         <section class="cv-block">
           <h2>Research Interests</h2>
           <ul class="tag-list">
+            <li>Time-Series Anomaly Detection and Behavioral Drift Detection</li>
             <li>AI Agents and Multi-Agent Systems</li>
-            <li>Agent Orchestration and Decision Structure</li>
-            <li>Sequential Decision Making</li>
-            <li>Reinforcement Learning for Policy Learning</li>
+            <li>Agent Reliability and Runtime Trace Evaluation</li>
+            <li>Sequential Decision Making and Reinforcement Learning</li>
             <li>AI Safety and Security in Agent Systems</li>
           </ul>
         </section>
@@ -128,12 +128,10 @@
             </div>
           </article>
           <ul class="detail-list">
-            <li>Study the role of high-level orchestration in hierarchical multi-agent systems.</li>
-            <li>Analyze orchestration trajectories and decision patterns from real system logs.</li>
-            <li>Define failure types such as looping, verification failure, and termination errors.</li>
-            <li>Evaluate performance-cost trade-offs in long-horizon interactive tasks.</li>
-            <li>Focus on agent selection, ordering, verification timing, and termination policy.</li>
-            <li>Develop evaluation harnesses for AI agent workflows and experimentation infrastructure for multi-agent performance and failure analysis.</li>
+            <li>Decompose agentic workflow reliability into four boundary decisions: acceptance, repair, continuation, and persistence.</li>
+            <li>Design a runtime evidence contract (policy_event_trace) recording gate status, evidence references, and persistence outcomes per run.</li>
+            <li>Evaluate on 240 executed sandbox runs with a 120-row human-reviewed subset and blind second-annotator check (Cohen's kappa = 0.87-0.93).</li>
+            <li>Show that 34 of 105 committed runs were premature commitments: boundary failures invisible to completion-only evaluation.</li>
           </ul>
         </section>
 
